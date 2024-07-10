@@ -1,0 +1,131 @@
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos nas dimensões do elemento */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão para todos os elementos */
+}
+
+header {
+    display: flex; /* Usa flexbox para o layout do cabeçalho */
+    justify-content: center; /* Centraliza horizontalmente os itens do cabeçalho */
+    align-items: center; /* Centraliza verticalmente os itens do cabeçalho */
+    padding: 17px 0; /* Define o espaçamento interno vertical */
+    background-color: #fff; /* Define a cor de fundo do cabeçalho */
+    border-bottom: 1px solid #d2d2d7; /* Adiciona uma borda inferior */
+}
+
+header button {
+    margin-left: 17px; /* Adiciona espaçamento à esquerda do botão */
+    padding: 8px 17px; /* Define o espaçamento interno do botão */
+    border-radius: 34px; /* Define bordas arredondadas */
+    font-size: 17px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    border: 1px solid #007aff; /* Define a cor e a largura da borda */
+    color: #007aff; /* Define a cor do texto */
+}
+
+header button:hover {
+    background-color: #007aff; /* Altera a cor de fundo ao passar o mouse */
+    color: #fff; /* Altera a cor do texto ao passar o mouse */
+}
+
+form {
+    text-align: center; /* Centraliza o texto */
+    background-color: #f5f5f7; /* Define a cor de fundo do formulário */
+    padding: 42px 0; /* Define o espaçamento interno vertical */
+    display: none; /* Oculta o formulário */
+}
+
+form h2 {
+    margin-bottom: 21px; /* Adiciona margem inferior */
+}
+
+form input {
+    color: #1d1d1f; /* Define a cor do texto */
+    border: 1px solid #d2d2d7; /* Define a cor e a largura da borda */
+}
+
+form input:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border: 1px solid #007aff; /* Define a cor da borda ao focar */
+}
+
+form input + button,
+form button + button {
+    margin-left: 8px; /* Adiciona margem à esquerda dos botões seguintes */
+}
+
+form button, input {
+    border: none; /* Remove a borda padrão */
+    padding: 8px 17px; /* Define o espaçamento interno */
+    border-radius: 34px; /* Define bordas arredondadas */
+    font-size: 17px; /* Define o tamanho da fonte */
+}
+
+#btn-enviar {
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    color: #007aff; /* Define a cor do texto */
+    border: 1px solid #007aff; /* Define a cor e a largura da borda */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+}
+
+#btn-enviar:hover {
+    background-color: #007aff; /* Altera a cor de fundo ao passar o mouse */
+    color: #fff; /* Altera a cor do texto ao passar o mouse */
+}
+
+#btn-cancelar {
+    color: #fff; /* Define a cor do texto */
+    background-color: #007aff; /* Define a cor de fundo */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+}
+
+#btn-cancelar:hover {
+    color: #fff; /* Mantém a cor do texto ao passar o mouse */
+    background-color: #2f87fc; /* Altera a cor de fundo ao passar o mouse */
+}
+
+ul {
+    display: flex; /* Usa flexbox para o layout dos itens da lista */
+    flex-wrap: wrap; /* Permite que os itens da lista sejam dispostos em várias linhas */
+}
+
+ul li {
+    max-width: 33.33333333333333%; /* Define a largura máxima dos itens da lista como um terço do contêiner pai */
+    list-style: none; /* Remove os marcadores padrão da lista */
+    position: relative; /* Define a posição relativa para que os elementos posicionados absolutamente dentro sejam posicionados em relação a este elemento */
+    max-height: 360px; /* Define a altura máxima dos itens da lista */
+    overflow-y: hidden; /* Oculta o conteúdo que ultrapassa a altura máxima */
+}
+
+ul li:hover .link-imagem {
+    opacity: 1; /* Torna o link visível ao passar o mouse sobre o item da lista */
+}
+
+ul li img {
+    width: 100%; /* Define a largura da imagem para ocupar 100% do contêiner pai */
+}
+
+.link-imagem {
+    padding: 10px 20px; /* Define o espaçamento interno do link */
+    background-color: #007aff; /* Define a cor de fundo do link */
+    color: #fff; /* Define a cor do texto do link */
+    position: absolute; /* Posiciona o link de forma absoluta em relação ao contêiner pai */
+    bottom: 20px; /* Define a distância do link em relação à parte inferior do contêiner */
+    left: 50%; /* Centraliza o link horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição do link para centralizar corretamente */
+    text-align: center; /* Centraliza o texto dentro do link */
+    border-radius: 5px; /* Define bordas arredondadas para o link */
+    opacity: 0; /* Define a opacidade inicial do link como invisível */
+    transition: all ease 0.5s; /* Define uma transição suave de 0.5 segundos para todas as propriedades */
+}
+
+.link-imagem a {
+    text-decoration: none; /* Remove a linha de sublinhado */
+    color: #fff; /* Define a cor do texto */
+}
+
+#img-adicionada{
+    display: none;
+}

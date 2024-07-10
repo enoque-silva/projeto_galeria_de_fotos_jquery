@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button>Adicionar +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2> 
+        <input id="campo-url" type="url" placeholder="URL da Imagem" required>
+        <button id="btn-enviar" type="submit">Enviar</button>
+        <button id="btn-cancelar" type="reset">Cancelar</button>                       
+    </form>
+    <main>
+        <section>
+            <ul>
+                <li>
+                    <img src="./images/foto1.jpg" alt="foto">
+                    <div class="link-imagem">
+                        <a href="./images/foto1.jpg" title="Visualizar em tamanho real" target="_blank">Visualizar em tamanho real</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/foto2.jpg" alt="foto">
+                    <div class="link-imagem">
+                        <a href="./images/foto2.jpg" title="Visualizar em tamanho real" target="_blank">Visualizar em tamanho real</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/foto3.jpg" alt="foto">
+                    <div class="link-imagem">
+                        <a href="./images/foto3.jpg" title="Visualizar em tamanho real" target="_blank">Visualizar em tamanho real</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/foto4.jpg" alt="foto">
+                    <div class="link-imagem">
+                        <a href="./images/foto4.jpg" title="Visualizar em tamanho real" target="_blank">Visualizar em tamanho real</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/foto5.jpg" alt="foto">
+                    <div class="link-imagem">
+                        <a href="./images/foto5.jpg" title="Visualizar em tamanho real" target="_blank">Visualizar em tamanho real</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src = 'https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src = './main.js' ></script>
+</body>
+</html>
